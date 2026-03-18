@@ -1,0 +1,35 @@
+---
+layout: base.njk
+---
+
+<article class="newsletter-single">
+  <h1>{{ title }}</h1>
+  <time datetime="{{ date | date('%Y-%m-%d') }}">{{ date | date("%B %d, %Y") }}</time>
+
+  {{ content | safe }}
+
+  <hr style="margin: 3rem 0; border: none; border-top: 2px solid var(--color-cream-dark);">
+
+  <section class="cta-bottom" style="background: none; padding: 2rem 0;">
+    <p style="color: var(--color-text-muted);">Enjoyed this issue? Share it with a fellow knitter.</p>
+    <form
+      class="signup-form"
+      action="https://buttondown.com/api/emails/embed-subscribe/purlofwisdom"
+      method="post"
+      target="popupwindow"
+    >
+      <div class="form-row">
+        <label for="email-newsletter" class="visually-hidden">Email address</label>
+        <input
+          type="email"
+          id="email-newsletter"
+          name="email"
+          placeholder="your@email.com"
+          required
+          aria-label="Email address"
+        />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </div>
+    </form>
+  </section>
+</article>

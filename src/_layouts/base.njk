@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} — Purl of Wisdom</title>
+  <meta name="description" content="{{ description or 'A weekly knitting newsletter full of patterns, tips, and yarn inspiration.' }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ title }} — Purl of Wisdom">
+  <meta property="og:description" content="{{ description or 'A weekly knitting newsletter full of patterns, tips, and yarn inspiration.' }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Purl of Wisdom",
+    "description": "A weekly knitting newsletter full of patterns, tips, and yarn inspiration.",
+    "url": "https://purlofwisdom.com"
+  }
+  </script>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="/" class="logo" aria-label="Purl of Wisdom home">
+        <span class="logo-icon" aria-hidden="true">&#10006;&#10006;</span>
+        <span class="logo-text">Purl of Wisdom</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/newsletter/">Archive</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; {{ "now" | date("%Y") }} Purl of Wisdom. Knit with love.</p>
+    </div>
+  </footer>
+</body>
+</html>

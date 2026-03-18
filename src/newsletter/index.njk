@@ -1,0 +1,29 @@
+---
+layout: base.njk
+title: Newsletter Archive
+description: "Browse past issues of Purl of Wisdom — weekly knitting patterns, tips, and inspiration."
+permalink: /newsletter/index.html
+tags: []
+---
+
+<div class="page-header">
+  <h1>Newsletter Archive</h1>
+</div>
+
+<div class="newsletter-list">
+  {%- for post in collections.newsletter | reverse -%}
+  <a href="{{ post.url }}" class="newsletter-item">
+    <h2>{{ post.data.title }}</h2>
+    <time datetime="{{ post.date | date('%Y-%m-%d') }}">{{ post.date | date("%B %d, %Y") }}</time>
+    {%- if post.data.excerpt %}
+    <p>{{ post.data.excerpt }}</p>
+    {%- endif %}
+  </a>
+  {%- endfor -%}
+
+  {%- if not collections.newsletter or collections.newsletter.length == 0 %}
+  <p style="text-align: center; color: var(--color-text-muted); padding: 3rem 0;">
+    Our first issue is coming soon! <a href="/" style="color: var(--color-rose);">Subscribe</a> so you don't miss it.
+  </p>
+  {%- endif %}
+</div>

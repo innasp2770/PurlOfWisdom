@@ -1,0 +1,486 @@
+/* ==========================================================================
+   Purl of Wisdom — Brand Stylesheet
+   Colors: Warm cream, dusty rose, deep plum, sage green
+   Typography: Playfair Display (headings), Inter (body)
+   ========================================================================== */
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-cream: #FDF6EC;
+  --color-cream-dark: #F5EBD8;
+  --color-rose: #C4727F;
+  --color-rose-light: #E8A5AE;
+  --color-rose-dark: #A35563;
+  --color-plum: #4A2040;
+  --color-plum-light: #6B3A5E;
+  --color-sage: #8BA888;
+  --color-sage-light: #B5CFAF;
+  --color-text: #2D2A26;
+  --color-text-muted: #6B6560;
+  --color-white: #FFFFFF;
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 5rem;
+
+  --max-width: 720px;
+  --max-width-wide: 1080px;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  background-color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Visually Hidden (Accessibility) --- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --- Skip Link (Accessibility) --- */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-md);
+  background: var(--color-plum);
+  color: var(--color-white);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: 0 0 4px 4px;
+  z-index: 1000;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* --- Container --- */
+.container {
+  max-width: var(--max-width-wide);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* --- Header --- */
+.site-header {
+  padding: var(--space-md) 0;
+  border-bottom: 2px solid var(--color-cream-dark);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  text-decoration: none;
+  color: var(--color-plum);
+}
+
+.logo-icon {
+  font-size: 1.25rem;
+  letter-spacing: -0.15em;
+  color: var(--color-rose);
+}
+
+.logo-text {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  transition: color 0.2s;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--color-plum);
+}
+
+/* --- Hero --- */
+.hero {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-md);
+  background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-cream-dark) 100%);
+}
+
+.hero-tagline {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-rose);
+  margin-bottom: var(--space-sm);
+}
+
+.hero h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 700;
+  color: var(--color-plum);
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--color-rose);
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  max-width: 540px;
+  margin: 0 auto var(--space-lg);
+  line-height: 1.8;
+}
+
+/* --- Signup Form --- */
+.signup-form {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.signup-form .form-row {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.signup-form input[type="email"] {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--color-cream-dark);
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background: var(--color-white);
+  color: var(--color-text);
+  transition: border-color 0.2s;
+}
+
+.signup-form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--color-rose);
+  box-shadow: 0 0 0 3px rgba(196, 114, 127, 0.2);
+}
+
+.signup-form input[type="email"]::placeholder {
+  color: var(--color-text-muted);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: var(--color-rose);
+  color: var(--color-white);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--color-rose-dark);
+}
+
+.signup-note {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-sm);
+}
+
+/* --- Features / What You'll Get --- */
+.features {
+  padding: var(--space-2xl) var(--space-md);
+}
+
+.features h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  color: var(--color-plum);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-lg);
+  max-width: var(--max-width-wide);
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: var(--space-lg);
+  border: 1px solid var(--color-cream-dark);
+  transition: box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 4px 12px rgba(74, 32, 64, 0.08);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
+}
+
+.feature-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-plum);
+  margin-bottom: var(--space-sm);
+}
+
+.feature-card p {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* --- Social Proof --- */
+.social-proof {
+  background: var(--color-plum);
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+}
+
+.social-proof blockquote {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.25rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.social-proof cite {
+  display: block;
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 0.875rem;
+  color: var(--color-rose-light);
+  margin-top: var(--space-md);
+}
+
+/* --- CTA Bottom --- */
+.cta-bottom {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-md);
+  background: var(--color-cream-dark);
+}
+
+.cta-bottom h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  color: var(--color-plum);
+  margin-bottom: var(--space-sm);
+}
+
+.cta-bottom p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+/* --- Footer --- */
+.site-footer {
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  border-top: 2px solid var(--color-cream-dark);
+}
+
+/* --- Newsletter Archive --- */
+.page-header {
+  text-align: center;
+  padding: var(--space-xl) var(--space-md) var(--space-lg);
+}
+
+.page-header h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-plum);
+}
+
+.newsletter-list {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md) var(--space-2xl);
+}
+
+.newsletter-item {
+  display: block;
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+  background: var(--color-white);
+  border-radius: 8px;
+  border: 1px solid var(--color-cream-dark);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.newsletter-item:hover,
+.newsletter-item:focus {
+  border-color: var(--color-rose-light);
+  box-shadow: 0 4px 12px rgba(74, 32, 64, 0.08);
+}
+
+.newsletter-item h2 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-plum);
+  margin-bottom: var(--space-xs);
+}
+
+.newsletter-item time {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.newsletter-item p {
+  margin-top: var(--space-sm);
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+/* --- Newsletter Single --- */
+.newsletter-single {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md) var(--space-2xl);
+}
+
+.newsletter-single h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-plum);
+  margin-bottom: var(--space-xs);
+}
+
+.newsletter-single time {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.newsletter-single h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-plum);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+}
+
+.newsletter-single h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-plum-light);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.newsletter-single p {
+  margin-bottom: var(--space-md);
+}
+
+.newsletter-single ul, .newsletter-single ol {
+  margin-bottom: var(--space-md);
+  padding-left: var(--space-lg);
+}
+
+.newsletter-single li {
+  margin-bottom: var(--space-sm);
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .signup-form .form-row {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .site-header .container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-list {
+    gap: var(--space-md);
+  }
+}
