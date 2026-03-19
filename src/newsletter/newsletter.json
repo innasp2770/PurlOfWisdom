@@ -1,5 +1,5 @@
 {
   "layout": "newsletter.njk",
-  "tags": "newsletter",
+  "tags": [],
   "permalink": "/newsletter/{{ page.fileSlug }}/index.html"
 }

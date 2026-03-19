@@ -118,10 +118,9 @@ img {
   color: var(--color-plum);
 }
 
-.logo-icon {
-  font-size: 1.25rem;
-  letter-spacing: -0.15em;
+.logo-icon-svg {
   color: var(--color-rose);
+  flex-shrink: 0;
 }
 
 .logo-text {
@@ -271,10 +270,11 @@ img {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-lg);
   max-width: var(--max-width-wide);
   margin: 0 auto;
+  justify-items: center;
 }
 
 .feature-card {
@@ -466,6 +466,12 @@ img {
 }
 
 /* --- Responsive --- */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 600px) {
   .signup-form .form-row {
     flex-direction: column;

@@ -4,7 +4,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");
 
   eleventyConfig.addFilter("date", function(value, format) {
-    const d = new Date(value);
+    const d = value === "now" ? new Date() : new Date(value);
     const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
     if (format === "%Y-%m-%d") {
       return d.toISOString().split("T")[0];
