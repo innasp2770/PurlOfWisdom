@@ -118,6 +118,11 @@ img {
   color: var(--color-plum);
 }
 
+.logo-icon {
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+
 .logo-icon-svg {
   color: var(--color-rose);
   flex-shrink: 0;
