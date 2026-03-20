@@ -3,6 +3,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/js");
 
+  eleventyConfig.ignores.add("src/email-templates/TEMPLATE-GUIDE.md");
+
   eleventyConfig.addFilter("date", function(value, format) {
     const d = value === "now" ? new Date() : new Date(value);
     const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
