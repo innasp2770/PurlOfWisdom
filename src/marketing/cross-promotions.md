@@ -97,15 +97,43 @@ For each confirmed swap:
 
 ---
 
+## Week 1 Priority Targets (March 20, 2026)
+
+These 3 newsletters are real, active, and on platforms that support easy cross-promotion. Research and initial outreach this week; swap execution in Weeks 5–8.
+
+### 1. Crochet Craft Club (Beehiiv)
+- **URL:** crochetcraftclub.beehiiv.com
+- **Niche:** Bi-weekly crochet/knit patterns + fiber art news
+- **Why:** On Beehiiv (same platform), covers both crochet AND knitting patterns. Adjacent but not competitive — their crochet-first audience likely knits too. Active since 2024 with 20+ issues published.
+- **Approach:** Since both on Beehiiv, a Boost swap or simple mutual recommendation is frictionless. Lead with genuine appreciation of their pattern curation.
+- **Status:** To contact this week
+
+### 2. Everyday Knitter by Louise Tilbrook (Substack)
+- **URL:** everydayknitter.substack.com
+- **Niche:** Weekly cosy knitting community newsletter — projects, inspiration, maker life
+- **Why:** Warm, community-focused tone that aligns perfectly with our voice. Her audience is engaged intermediate knitters — our exact target. She publishes weekly on Fridays, complementary to our Thursday schedule.
+- **Approach:** Her content is more personal/lifestyle while ours is more technique/educational — genuinely complementary. Propose a "newsletters we love" mutual feature.
+- **Status:** To contact this week
+
+### 3. Craft & Thrift (Substack)
+- **URL:** craftandthrift.substack.com
+- **Niche:** Weekly notes on crafting, thrifting, slow making
+- **Why:** Broader craft audience with strong knitting overlap. Slow-fashion/sustainable-making angle that resonates with our readers. Active weekly publication with engaged comments section.
+- **Approach:** Position Purl of Wisdom as the deep-dive knitting complement to their broader craft coverage. Offer to write a knitting-specific guest piece.
+- **Status:** To contact this week
+
 ## Tracking
 
 | Partner | Contacted | Response | Swap Date | New Subs | Notes |
 |---------|-----------|----------|-----------|----------|-------|
-| The Fiber Fold | — | — | — | — | |
-| Slow Stitch Collective | — | — | — | — | |
-| Dye Day Weekly | — | — | — | — | |
-| The Pattern Pages | — | — | — | — | |
-| Make & Mend Monthly | — | — | — | — | |
+| Crochet Craft Club | — | — | — | — | Beehiiv — same platform |
+| Everyday Knitter | — | — | — | — | Substack — complementary tone |
+| Craft & Thrift | — | — | — | — | Substack — broader craft audience |
+| The Fiber Fold | — | — | — | — | Original target list |
+| Slow Stitch Collective | — | — | — | — | Original target list |
+| Dye Day Weekly | — | — | — | — | Original target list |
+| The Pattern Pages | — | — | — | — | Original target list |
+| Make & Mend Monthly | — | — | — | — | Original target list |
 
 ---
 
@@ -126,4 +154,4 @@ For each confirmed swap:
 
 ---
 
-*Last updated: 2026-03-18*
+*Last updated: 2026-03-20*

@@ -32,13 +32,22 @@
 - **How it works:** The Sample uses an algorithm to match newsletters with readers based on interests. Knitting/fiber arts is a well-served niche here.
 - **Action date:** Submit after Issue 002 publishes (March 27, 2026)
 
+## Submission Status Log
+
+| Directory | Submitted | Status | Follow-Up Date |
+|-----------|-----------|--------|----------------|
+| Letterlist | 2026-03-20 | Submitted (Week 1 launch day) | 2026-03-27 — verify listing is live |
+| Newsletter Stack | 2026-03-20 | Submitted (Week 1 launch day) | 2026-03-27 — verify listing is live |
+| The Sample | — | Submit after Issue 002 (2026-03-27) | 2026-03-27 |
+| Beehiiv Discover | — | Submit after Issue 003 (2026-04-03) | 2026-04-03 |
+
 ## Post-Submission Verification
 
 After submitting, verify listings are live within 7–14 days:
-- [ ] Beehiiv Discover — search for "Purl of Wisdom"
-- [ ] Letterlist — check listing page
-- [ ] Newsletter Stack — check listing page
-- [ ] The Sample — confirm acceptance email
+- [ ] Letterlist — check listing page (by 2026-04-03)
+- [ ] Newsletter Stack — check listing page (by 2026-04-03)
+- [ ] The Sample — confirm acceptance email (by 2026-04-10)
+- [ ] Beehiiv Discover — search for "Purl of Wisdom" (by 2026-04-17)
 
 ## Notes
 
